@@ -1,0 +1,44 @@
+#addBtn{
+    font-weight: bolder;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2px;
+    position: absolute;
+    left: 2%;
+    z-index: 3;
+}
+#addBtn:active{
+    border: 5px solid black;
+}
+
+#backBtn{
+    width: 105px;
+    height: 45px;
+    background-image: conic-gradient(from var(--angle), cyan, blue, purple, magenta, red, orange, yellow, lime, green, cyan);
+    border-radius: 20px;
+    position: absolute;
+    left: 63%;
+    top: 145px;
+    animation: spin 2s linear infinite;
+}
+.btn{
+    border-radius: 20px;
+    cursor: pointer;
+}
+#deleteBtn{
+    width: 105px;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 12px;
+    margin-left: -120px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
