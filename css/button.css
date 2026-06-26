@@ -24,7 +24,7 @@
     background-image: conic-gradient(from var(--angle), cyan, blue, purple, magenta, red, orange, yellow, lime, green, cyan);
     border-radius: 20px;
     position: absolute;
-    left: 63%;
+    right: 25%;
     top: 145px;
     animation: spin 2s linear infinite;
 }

@@ -10,7 +10,7 @@ h1{
     text-shadow: 2px 2px 20px deeppink;
 }
 #taskInput{
-    width: 600px;
+    width: 67%;
     height: 40px;
     font-size: 20px;
     border-radius: 20px;
@@ -31,16 +31,18 @@ h1{
     flex-direction: row;
     background-color: hotpink;
     border-radius: 20px;
-    width: 695px;
+    width: 51%;
     height: 70px;
     margin: 10px;
 }
 
 #task1{
+    display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
     width: 600px;
-    background-color: grey;
+    background-color: rgba(3, 20, 251, 0.364);
     border-radius: 20px;
     font-size: 30px;
     text-align: left;
@@ -56,4 +58,11 @@ h1{
 }
 .open{
     text-decoration: line-through;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    justify-self: center;
 }
