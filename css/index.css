@@ -17,6 +17,7 @@ h1{
     border: none;
     padding: 5px;
     padding-left: 10px;
+    padding-right: 110px;
 }
 
 #taskList{
@@ -88,6 +89,5 @@ h1{
 @media(width<=550px){
     .container{
         position: relative;
-        right: 0%;
     }
 }
