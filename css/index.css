@@ -73,7 +73,7 @@ h1{
 }
 
 
-@media(width<=1000px){
+@media(width<=520px){
     h1{
         font-size: 75px;
     }
