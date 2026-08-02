@@ -90,8 +90,3 @@ h1{
         font-size: 65px;
     }
 }
-@media(width<=550px){
-    .container{
-        position: relative;
-    }
-}
