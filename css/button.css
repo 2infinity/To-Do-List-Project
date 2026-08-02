@@ -45,6 +45,8 @@
 }
 @media(width<=520px){
     #backBtn{
-        position: inherit;
+        position: relative;
+        top: -48px;
+        right:-55px;
     }
 }
