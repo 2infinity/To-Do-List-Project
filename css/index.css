@@ -92,7 +92,7 @@ h1{
     }
 }
 
-@media(width<=550px){
+@media(width<=600px){
     .container{
         padding-left: 60px;
     }
