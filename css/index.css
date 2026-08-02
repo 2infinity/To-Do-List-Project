@@ -73,11 +73,13 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
     justify-self: center;
+    width: 100%;
     margin: 0px;
-    padding-left: 10px;
     
+    align-self: center;
+    background-color: blue;
+    padding-left: 100px;
 }
 
 @media(width>=1000px){
