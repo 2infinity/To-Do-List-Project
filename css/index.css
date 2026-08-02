@@ -67,6 +67,7 @@ h1{
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 75%;
     justify-self: center;
