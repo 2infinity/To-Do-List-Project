@@ -80,7 +80,11 @@ h1{
     
 }
 
-
+@media(width>=1000px){
+    .container{
+        width: 75%;
+    }
+}
 @media(width<=1000px){
     h1{
         font-size: 65px;
