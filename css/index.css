@@ -71,3 +71,10 @@ h1{
     width: 75%;
     justify-self: center;
 }
+
+
+@media(width<=1000px){
+    h1{
+        font-size: 75px;
+    }
+}
