@@ -70,10 +70,13 @@ h1{
 .container{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
     justify-content: center;
     width: 100%;
     justify-self: center;
+    margin: 0px;
+    padding-left: 105px;
+    
 }
 
 

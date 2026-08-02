@@ -25,7 +25,7 @@
     border-radius: 20px;
     position: relative;
     right: 105px;
-    top: 2px;
+    top: 0px;
     animation: spin 2s linear infinite;
 }
 .btn{
