@@ -89,6 +89,21 @@ function addTask() {
     noteArray.push({ text: note, completed: false });
     saveAndRender();
     taskInput.value = "";
+    randomPlaceHolder();
+}
+
+function randomPlaceHolder(){
+    const place = [
+        "What to do?",
+        "What are you thinking?",
+        "What do you need to remember?",
+        "I will remember for you.",
+        "If you forget, I won't",
+        "Type a brilliant idea...",
+        "I'm here to keep your secrets."
+    ]
+    randomNum = Math.floor(Math.random()*place.length);
+    taskInput.placeholder = place[randomNum];
 }
 
 addBtn.addEventListener("click", addTask);
@@ -98,4 +113,5 @@ taskInput.addEventListener("keydown", e => {
     }
 });
 
+randomPlaceHolder();
 render();
