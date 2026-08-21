@@ -63,6 +63,7 @@ function render() {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.id = "deleteBtn";
+        deleteBtn.className="deleteBtn"
         deleteBtn.textContent = "DELETE";
         deleteBtn.onclick = () => {
             noteArray.splice(i, 1);

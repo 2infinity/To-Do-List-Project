@@ -78,10 +78,10 @@ h1{
     justify-self: center;
     width: 100%;
     margin: 0px;
-    
     align-self: center;
     padding-left: 100px;
 }
+
 
 @media(width>=1000px){
     .container{
