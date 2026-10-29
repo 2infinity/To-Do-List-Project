@@ -11,6 +11,9 @@ function render() {
     noteArray.forEach((e, i) => {
         const box = document.createElement("div");
         box.id = "box";
+        const timeStamp = document.createElement("span");
+        timeStamp.textContent = e.time;
+
 
         const checkBox = document.createElement("input");
         checkBox.id = "check";
@@ -28,7 +31,7 @@ function render() {
             const editInput = document.createElement("input");
             editInput.type = "text";
             editInput.value = e.text;
-            editInput.id = "task1"; // keeping your ID for now
+            editInput.id = "task1"; 
 
             // Function to save the edited text
             const saveEdit = () => {
@@ -73,6 +76,7 @@ function render() {
         box.appendChild(checkBox);
         box.appendChild(task1);
         box.appendChild(deleteBtn);
+        box.appendChild(timeStamp);
         taskList.appendChild(box);
     });
 }
@@ -87,7 +91,18 @@ function addTask() {
     if (note === "") {
         return;
     }
-    noteArray.push({ text: note, completed: false });
+    function timeywimey(){
+            const now = new Date();
+            let hours = now.getHours();
+            const mid = hours>=12?"PM":"AM";
+            hours = hours%12;
+            hours.toString().padStart(0,1);
+            const minutes = now.getMinutes().toString().padStart(0, 1);
+            const seconds = now.getSeconds().toString().padStart(0, 1);
+            const timeString = `${hours}:${minutes}:${seconds} ${mid}`;
+            return timeString;
+    }
+    noteArray.push({ text: note, completed: false, time:timeywimey() });
     saveAndRender();
     taskInput.value = "";
     randomPlaceHolder();
