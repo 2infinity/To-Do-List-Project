@@ -96,10 +96,13 @@ function addTask() {
             let hours = now.getHours();
             const mid = hours>=12?"PM":"AM";
             hours = hours%12;
-            hours.toString().padStart(0,1);
-            const minutes = now.getMinutes().toString().padStart(0, 1);
-            const seconds = now.getSeconds().toString().padStart(0, 1);
-            const timeString = `${hours}:${minutes}:${seconds} ${mid}`;
+            hours.toString().padStart(2, "0");
+            const minutes = now.getMinutes().toString().padStart(2, "0");
+            const seconds = now.getSeconds().toString().padStart(2, "0");
+            const month = now.getMonth() + 1;
+            const day = now.getDate();
+            const year = now.getFullYear();
+            const timeString = `${hours}:${minutes}:${seconds} ${mid} ${month}/${day}/${year} `;
             return timeString;
     }
     noteArray.push({ text: note, completed: false, time:timeywimey() });
