@@ -70,6 +70,7 @@ h1{
 }
 .open{
     text-decoration: line-through;
+    color: black;
 }
 .container{
     display: flex;
